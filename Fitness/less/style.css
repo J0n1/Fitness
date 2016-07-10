@@ -1,0 +1,96 @@
+@import url(http://db.onlinewebfonts.com/c/c39dc1716db69a2e7a43326eab745330?family=AvenirNextRoundedW01-Demi);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.container-fluid {
+  max-width: 1920px;
+  padding-left: 0;
+  padding-right: 0;
+}
+* {
+  outline: none!important;
+}
+.navbar-fixed-top {
+  position: absolute;
+}
+.navbar-default {
+  border: 0;
+  border-radius: 0;
+  margin: 20px 63px 0 55px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.navbar-default .navbar-brand {
+  font-family: 'AvenirNextRoundedW01-Demi', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active {
+  color: white;
+}
+.navbar-default .navbar-brand span {
+  border-bottom: 3px solid #a2ca28;
+}
+.navbar-default h1 {
+  height: 55px;
+  float: left;
+  margin-top: 9px;
+  background: url(../img/Shape9.svg) 0 10px no-repeat;
+  background-size: 30px auto;
+}
+.navbar-default a {
+  padding-left: 50px;
+}
+.navbar-default .navbar-nav {
+  margin-top: 20px;
+}
+.navbar-default .navbar-nav li a {
+  font-family: 'AvenirNextRoundedW01-Demi', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: white;
+  letter-spacing: 1px;
+}
+.navbar-default .navbar-nav li:nth-child(1n+2) {
+  margin-left: 34px;
+}
+.navbar-default .navbar-nav li.active a,
+.navbar-default .navbar-nav li.active a:hover,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:active {
+  color: white;
+  text-decoration: underline;
+}
+header {
+  background: url(../img/Header/Layer25.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header section {
+  padding-top: calc(41.5%);
+  padding-bottom: calc(7.9%);
+  color: white;
+  text-transform: uppercase;
+}
+header h1 {
+  font-family: 'AvenirNextRoundedW01-Demi', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  margin-left: calc(7%);
+  margin-bottom: 4px;
+}
+header h1 span {
+  color: #a2ca28;
+}
+header p {
+  font-family: 'Open+Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-left: calc(17%);
+  font-size: 15px;
+}
+header p span {
+  color: #fd634e;
+}
