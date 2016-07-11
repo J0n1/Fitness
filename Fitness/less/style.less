@@ -5,7 +5,9 @@
 
 // FONTS
 @import url(http://db.onlinewebfonts.com/c/c39dc1716db69a2e7a43326eab745330?family=AvenirNextRoundedW01-Demi);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 
@@ -96,6 +98,7 @@
 // HEADER
 
 header {
+	background-color: @color-main-1;
 	background: url(../img/Header/Layer25.jpg) 0 0 no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
@@ -120,7 +123,7 @@ header {
 	}
 
 	p {
-		font-family: 'Open+Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: 700;
 		letter-spacing: 3px;
 		margin-left: calc(17%);
@@ -132,3 +135,53 @@ header {
 	}
 }
 
+
+
+// FEATURES
+
+.features {
+	padding-top: 96px;
+	padding-bottom: 116px;
+	color: @color-white;
+	background-color: @color-main-1;
+	
+	h1 {
+		font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		font-size: 24px;
+		height: 90px;
+		line-height: 140px;
+	}
+
+	article:nth-child(1) h1 {
+		background: url(../img/Features/Shape7.png) 0 0 no-repeat;
+	}
+	article:nth-child(2) h1 {
+		background: url(../img/Features/Shape8.png) 0 0 no-repeat;
+	}
+	article:nth-child(3) h1 {
+		background: url(../img/Features/Shape11.png) 0 0 no-repeat;
+	}
+	article:nth-child(4) h1 {
+		background: url(../img/Features/Shape10.png) 0 0 no-repeat;
+	}
+
+	p {
+		font-size: 14px;
+		font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		line-height: 25px;
+		min-height: 108px;
+	}
+
+	a {
+		color: @color-white;
+		font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+	
+		&:hover,
+		&:visited,
+		&:active {
+			color: @color-white;
+		}
+	}
+}
