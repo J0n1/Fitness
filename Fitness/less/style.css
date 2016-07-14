@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
 .container-fluid.page {
   background-color: #a2ca28;
   max-width: 1920px;
@@ -20,6 +21,9 @@
   margin: 20px 63px 0 55px;
   text-transform: uppercase;
   background-color: transparent;
+}
+.navbar-default .container-fluid {
+  max-width: 1920px;
 }
 .navbar-default .navbar-brand {
   font-family: 'AvenirNextRoundedW01-Demi', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -425,4 +429,137 @@ header p span {
   right: 25px;
   top: 55px;
   background: url(../img/About/Shape9.png) 0px 0px no-repeat;
+}
+.banner {
+  background: url(../img/Banner/Banner.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  padding-top: 13%;
+  position: relative;
+}
+.banner h1 {
+  font-weight: 400;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.banner p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+}
+.banner-text {
+  position: absolute;
+}
+.banner:after {
+  content: "";
+  display: block;
+  padding-top: 38%;
+}
+footer {
+  background-color: #0d1119;
+  color: white;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 400px;
+}
+footer h1 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8297a7;
+  line-height: 24px;
+}
+footer .form-inline {
+  margin-top: 18px;
+}
+footer .form-inline .form-group:nth-child(1) .form-control {
+  width: 200px;
+}
+footer .form-inline .form-group:nth-child(2) .form-control {
+  width: 335px;
+}
+footer input.form-control {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 49px;
+  padding: 12px 25px;
+  font-size: 14px;
+  margin-right: 2px;
+}
+footer button.btn {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px 35px;
+  font-size: 14px;
+}
+footer button.btn i {
+  font-size: 12px;
+  padding-left: 3px;
+}
+footer .btn-default {
+  background-color: #a2ca28;
+  color: white;
+}
+footer .btn-default:hover,
+footer .btn-default:active,
+footer .btn-default:focus {
+  background-color: #a2ca28;
+}
+footer .btn-default.active.focus,
+footer .btn-default.active:focus,
+footer .btn-default.active:hover,
+footer .btn-default:active.focus,
+footer .btn-default:active:focus,
+footer .btn-default:active:hover {
+  background-color: #fd634e;
+  color: white;
+}
+footer input.form-control,
+footer .btn-default {
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+footer input.form-control:focus,
+footer .btn-default:focus,
+footer input.form-control:active,
+footer .btn-default:active {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.list-inline {
+  padding: 2px;
+}
+.icon-social {
+  color: white;
+  font-size: 19px;
+  margin-right: 1px;
+  display: inline-block;
+  padding: 11px 16px;
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.icon-social-facebook {
+  background-color: #2e3192;
+  padding-left: 19px;
+}
+.icon-social-twitter {
+  background-color: #00aeef;
+  padding-left: 17px;
+}
+.icon-social-youtube-play {
+  background-color: #ed3123;
+}
+.icon-social-linkedin {
+  background-color: #171a8f;
+  padding-left: 17px;
 }

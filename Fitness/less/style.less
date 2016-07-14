@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
 
 
 
@@ -38,6 +39,10 @@
 	margin: 20px 63px 0 55px;
 	text-transform: uppercase;
 	background-color: transparent;
+	
+	.container-fluid {
+		max-width: 1920px;
+	}
 
 	.navbar-brand {
 		font-family: 'AvenirNextRoundedW01-Demi', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -99,10 +104,7 @@
 // HEADER
 
 header {
-	background: url(../img/Header/Layer25.jpg) 0 0 no-repeat;
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+	.about-bg-img(url(../img/Header/Layer25.jpg));
 
 	section {
 		padding-top: calc(41.5%);
@@ -546,3 +548,166 @@ header {
 		}
 	}
 }
+
+
+
+// BANNER
+
+.banner {
+	.about-bg-img(url(../img/Banner/Banner.jpg));
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: @color-white;
+	padding-top: 13%;
+	position: relative;
+	    
+	h1 {
+		font-weight: 400;
+		font-size: 45px;
+		margin-bottom: 30px;
+	}
+
+	p {
+		max-width: 500px;
+		margin: 0 auto;
+		font-weight: 400;
+		font-size: 16px;
+	}
+}
+
+.banner-text {
+	position: absolute;
+}
+
+.banner:after {
+	content:"";
+	display: block;
+	padding-top: 38%;
+}
+
+
+
+// FOOTER
+
+footer {
+	background-color: #0d1119;
+	color: @color-white;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-top: 30px;
+	padding-bottom: 400px;
+	
+	
+	h1 {
+		font-size: 15px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		color: rgb(130, 151, 167);
+		line-height: 24px;
+	}
+
+	.form-inline {
+		margin-top: 18px;
+		
+		.form-group:nth-child(1) .form-control {
+			width: 200px;
+		}
+		.form-group:nth-child(2) .form-control {
+			width: 335px;
+		}
+	}
+
+
+	input.form-control {
+		font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		height: 49px;
+		padding: 12px 25px;
+		font-size: 14px;
+		margin-right: 2px;
+	}
+
+	button.btn {
+		font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		padding: 15px 35px;
+		font-size: 14px;
+		
+		i {
+			font-size: 12px;
+			padding-left: 3px;
+		}
+	}
+
+	.btn-default {
+		background-color: @color-main-1;
+		color: @color-white;
+		
+		&:hover,
+		&:active,
+		&:focus, {
+			background-color: @color-main-1;
+		}
+	}
+
+	.btn-default.active.focus, 
+	.btn-default.active:focus, 
+	.btn-default.active:hover, 
+	.btn-default:active.focus, 
+	.btn-default:active:focus, 
+	.btn-default:active:hover {
+		background-color: @color-main-2;
+		color: @color-white;
+	}
+
+	input.form-control,
+	.btn-default {
+		border: none;
+		-webkit-border-radius: 2px;
+		        border-radius: 2px;
+		
+		&:focus,
+		&:active {
+			border: none;
+			-webkit-box-shadow: none;
+			        box-shadow: none;
+		}
+	}
+}
+
+
+.list-inline {
+	padding: 2px;
+}
+
+.icon-social {
+	color: @color-white;
+	font-size: 19px;
+	margin-right: 1px;
+	display: inline-block;
+	padding: 11px 16px;
+	height: 50px;
+	width: 50px;
+	-webkit-border-radius: 50%;
+        	border-radius: 50%;
+}
+
+.icon-social-facebook {
+	background-color: #2e3192;
+	padding-left: 19px;
+}
+.icon-social-twitter {
+	background-color: #00aeef;
+	padding-left: 17px;
+}
+.icon-social-youtube-play {
+	background-color: #ed3123;
+}
+.icon-social-linkedin {
+	background-color: #171a8f;
+	padding-left: 17px;
+}
+
+
+
